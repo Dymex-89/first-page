@@ -10,11 +10,13 @@
 
     <link rel="stylesheet" href="main.css">
 	<script src="code.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
 
         <div class="menu">
+            <img src="img/the-flash-sign.png" alt="sign" width="100px">
             <h2>MENU</h2>
             <ul>
                 <li><a href="index.html">Strona główna</a></li>
@@ -72,13 +74,42 @@
                     </table>
             </ul>
 
-            <br><hr>
+            <br><br><br><br><br><br><br><br><br><br><hr>
             <h3>"some stuff" part</h3>
-            <div class="fun1"></div>
+            <div class="fun"></div>
             <br>
-            <div class="fun2"></div>
 
-            <br><br><br><br><br><br><br><br><br><br>
+            <div>
+                <table style="margin:auto">
+                    <tr>
+                        <td><input type="button" value="wlącz" onclick="turngreen()"></td>
+                        <td><div id="dioda"></div></td>
+                        <td><input type="button" value="wylącz" onclick="turnred()"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="text-align:left">
+                <h3>Dodawanie do listy:</h3>
+                <label for="nowyElement">Dodaj do listy:</label>
+                <input type="text" id="nowyElement">
+                <input type="button" value="Dodaj" onclick="addToList()">
+                <ol id="lista">
+                </ol>
+            </div>
+
+            <div id="showContent">
+                <p>We've been anticipating a device called the Gear S4 for almost two years now, but instead Samsung introduced us to the Gear Sport at the tail end of 2017 and it's currently uncertain what the next smartwatch from the company will be called.</p>
+                <p>Both the Gear S3 and Gear Sport have been impressive Tizen-toting watches but whatever Samsung plans to release next, all we currently know for certain is that we don't know anything concrete.</p>
+                <p>Some of the rumors suggest Samsung will be focusing on the health, fitness and sleep tracking elements of the watch, plus the company seemingly wants to put a big focus on its internet connectivity too. Then there are several futuristic looking patents point towards features that may be included, but nothing is for certain.</p>
+                <p>At the moment, most of the recent rumors suggest it'll be called the Samsung Galaxy Watch rather than the Gear S4 or the Gear Sport 2. A big leak from Samsung's website suggests it'll be the Galaxy Watch, but the Gear S4 name is still being toted by some sources.</p>
+                <p>You’ll find information on all of the patents, rumors, leaks and much more below, along with a list of the things we want to see from the next Samsung watch whatever the company decides to call it.</p>
+            </div>
+            <a id="showButton">Pokaż więcej</a>
+
+            <div id="timerTest"></div>
+
+            <br><br><br><br><br>
             <hr>
             <a href="#top">do góry</a>
             <hr>
