@@ -1,0 +1,92 @@
+body {
+    background-color: SaddleBrown;
+	margin: 0;
+}
+
+/********** klasy div **********/
+.container {
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.menu {
+    background-color: SaddleBrown;
+    height: 100%;
+    position: fixed;
+    width: 20%;
+}
+
+.content {
+    background-image: url("../img/bg2.png");
+    float:left;
+    left: 20%;
+    position: relative;
+    width: 80%;
+}
+
+.field_red {
+    background-color: darkred;
+    border-radius: 20px;
+    display: inline-block;
+    width: 32%;
+}
+
+.field_green {
+    background-color: darkgreen;
+    border-radius: 20px;
+    display: inline-block;
+    width: 32%;
+}
+
+.field_blue {
+    background-color: darkblue;
+    border-radius: 20px;
+    display: inline-block;
+    width: 32%;
+}
+
+.bottombanner {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.fun1 {
+    background: orange;
+    background: -moz-linear-gradient(top, orange 0%, blue 100%);
+    background: -webkit-linear-gradient(top, orange 0%, blue 100%);
+    background: linear-gradient(top, orange 0%, blue 100%);
+    border-radius: 50px;
+    height: 100px;
+    opacity: 0.5;
+    width: 100px;
+}
+
+.fun2 {
+    background: green;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px rgba(255,40,100,0.6);
+    height: 100px;
+    width: 100px;
+}
+
+.clear {clear: both;}
+
+/********** linki **********/
+a:link {color: white;}
+a:visited {color: lightgray;}
+a:hover {color: DarkGoldenRod;}
+a:active {color: red;}
+
+/********** lista **********/
+ul {text-align: left;}
+.content ul {list-style-position: inside;}
+.tips {list-style-type: square;}
+.todos {list-style-type: circle;}
+
+/********** kolory czcionki **********/
+.colorred {color: red}
+.colorgreen {color: green}
+.colorblue {color: blue}
