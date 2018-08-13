@@ -116,6 +116,59 @@ body {
     transition: background 0.7s;
 }
 
+.kolumny {
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+    -webkit-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+    text-align: justify;
+    margin: 2%;
+}
+
+.circle {
+    width: 200px;
+    line-height: 0;
+    border-radius: 100px;
+    background: darkblue;
+    margin: 50px auto;
+    cursor: pointer;
+    padding: 100px 0;
+    transition: background 1s, transform 0.5s;
+}
+
+.circle:hover {
+    background: blue;
+    transform: rotate(360deg);
+}
+
+.way {
+    height: 120px;
+    background: gold;
+    margin: 20px 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    left: 0;
+    height: 120px;
+    animation: move 3s both infinite alternate linear;
+
+}
+
+@keyframes move {
+    from{ transform: translateX(0) }
+    to{ transform: translateX(500px) rotateZ(180deg);}
+}
+
+@keyframes rotat {
+    0%{ transform: rotateX(180deg) }
+    100%{ transform: rotateX(180deg) }
+}
+
 .clear {clear: both;}
 
 /********** linki **********/
